@@ -1,0 +1,401 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+:root{
+    --primary-font: Roboto;
+    --color-secondary: #rgb(131,134,137);
+    --bg-color: #ECF0F3;
+    --bx-shadow:2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    --border-style:2px solid white;
+    --border-bottom:1px solid rgba(0, 0, 0, 0.2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+/* ESTILOS GRALES */
+.all-content{
+    padding: 0 150px 0 150px;
+}
+body{
+    background-color: var(--bg-color);
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color:var(--color-secondary);
+}
+
+/* //////////// HEADER ////////////*/
+.navbar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 12px;
+}
+/* //////// MAIN //////// */
+main{
+    /* height: 90vh; */
+    padding: 70px 0 100px 0;
+    display: flex;
+    gap: 7%;
+    align-items: center;
+    border-bottom: var(--border-bottom);
+}
+
+.main-data{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+.introduction{
+    height: 50%;
+    width: 100%;
+}
+
+.pwelcome{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.hi-name{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.name{
+    color:red;
+}
+
+p.introduction-text{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10%;
+    line-height: 25px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.the-a{
+    color: red;
+    font-weight: 500;
+}
+
+.title-fullstack{
+    margin-top: 10px;
+}
+.introduction-icons{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.box-buttons{
+    height: 40px;
+}
+.container-icons{
+    display: flex;
+    gap: 10px;
+}
+.icons-title{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.icon-box{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border: var(--border-style);
+    box-shadow:var(--bx-shadow);
+    border-radius: 5px;
+}
+
+.main-image-container {
+    width: 45%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.main-image {
+    width: fit-content;
+    width: 100%;
+}
+
+/* /////// SECTION FEATURES ////////// */
+#features{
+    padding-top: 60px;
+    border-bottom: var(--border-bottom);
+}
+.title-features{
+    font-size: 14px;
+    font-weight: 300;
+    color: red;
+}
+.main-title-features{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.container-features-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 40px 0 40px 0;
+
+}
+
+.features-card{
+    width: 320px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3%;
+    padding: 40px 20px 40px 20px;
+    box-shadow: var(--bx-shadow);
+    border-radius: 5px;
+    border: var(--border-style);
+}
+h5{
+    font-size: 16px;
+    font-weight: 450;
+    margin-bottom: 10px;
+}
+.card-text{
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+/* //////////SECCION PORTFOLIO //////////// */
+#my-portfolio{
+    padding: 60px 0 60px 0;
+    text-align: center;
+    padding-bottom: 45px;
+    border-bottom: var(--border-bottom);
+}
+.main-title-portfolio{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.container-cards-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+}
+.portfolio-card{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: var(--bx-shadow);
+    border: var(--border-style);
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    text-align: left;
+}
+.container-img-portfolio{
+    overflow: hidden;
+    max-height: 60%;
+    margin-bottom: 20px;
+}
+.img-portfolio{
+    max-width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.container-subtitles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.technology-title{
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+}
+.portfolio-card-title{
+    font-weight: 420;
+}
+/* ///////// SECTION RESUME ///////////// */
+#resume{
+    text-align: center;
+    padding: 70px 0 70px 0;
+    border-bottom: var(--border-bottom);
+}
+.years{
+    color: red;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.submenu-resume-section{
+    margin: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--border-style);
+    border-radius: 8px;
+    box-shadow: var(--bx-shadow);
+}
+.submenu-resume-item{
+    width: 25%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#smenu-resume-firstitem{
+    border-radius: 8px;
+    border-right: 2px solid white;
+    box-shadow: var(--bx-shadow);
+    color: red;
+}
+/*
+#smenu-resume-lastitem{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+} */
+
+.container-resume-articles{
+    display: flex;
+    height: 100vh;
+    gap: 10px;
+}
+.date{
+    color: red;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.column{
+    width: 50%;
+    padding-top: 20px;
+
+}
+.main-column-title{
+    margin: 20px 0 20px 0;
+    text-align: left;
+}
+.stick{
+    width: 3px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+.first-stick{
+    height: 30px;
+}
+.last-stick{
+    height: 165px;
+}
+.circle{
+    width: 12px;
+    height: 12px;
+    border: 3px solid rgba(0, 0, 0, 0.09);
+    border-radius: 6px;
+}
+.container-lstick{
+    height: 200px;
+    margin-bottom: 20px;
+}
+.little-stick{
+    height: 3px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.09);
+    position: relative;
+    top:35px;
+    left: -3px;
+}
+.second-stick{
+    top:27px;
+}
+.third-stick{
+    top:19px;
+}
+.list-decoration{
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.container-resume-cards{
+    display: flex;
+}
+.resume-card{
+    background-color: #ECF0F3;
+    height: 200px;
+    width: 95%;
+    border: var(--border-style);
+    border-radius: 8px;
+    box-shadow: var(--bx-shadow);
+    padding: 25px 20px 25px 20px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+.card-header{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: end;
+}
+.resume-card-title{
+    font-size: 16px;
+    font-weight: 500;
+}
+.institute{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.card-number{
+    background-color:#feffff;
+    height: 28px;
+    width: 60px;
+    text-align: center;
+    color: red;
+    font-size: 13px;
+    border: var(--border-style);
+    border-radius: 6px;
+    box-shadow: var(--bx-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-body{
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* //////// SECTION MY BLOG ////////////// */
