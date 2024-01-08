@@ -9,6 +9,8 @@
     --bx-shadow:2px 2px 5px 1px rgba(0, 0, 0, 0.2);
     --border-style:2px solid white;
     --border-bottom:1px solid rgba(0, 0, 0, 0.2);
+    --border-color: #DCE0E1;
+    --color-red: #FF004F;
 }
 *{
     margin: 0;
@@ -19,7 +21,7 @@
 
 /* ESTILOS GRALES */
 .all-content{
-    padding: 0 150px 0 150px;
+    padding: 0 210px 0 210px;
 }
 body{
     background-color: var(--bg-color);
@@ -28,6 +30,9 @@ body{
 a{
     text-decoration: none;
     color:var(--color-secondary);
+}
+p{
+    color: gray;
 }
 
 /* //////////// HEADER ////////////*/
@@ -81,7 +86,7 @@ main{
 }
 
 .name{
-    color:red;
+    color:var(--color-red);
 }
 
 p.introduction-text{
@@ -94,7 +99,7 @@ p.introduction-text{
 }
 
 .the-a{
-    color: red;
+    color: var(--color-red);
     font-weight: 500;
 }
 
@@ -154,7 +159,7 @@ p.introduction-text{
 .title-features{
     font-size: 14px;
     font-weight: 300;
-    color: red;
+    color: var(--color-red);
 }
 .main-title-features{
     font-size: 40px;
@@ -169,7 +174,7 @@ p.introduction-text{
 }
 
 .features-card{
-    width: 320px;
+    width: 30%;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -238,7 +243,7 @@ h5{
 .technology-title{
     font-size: 12px;
     font-weight: 400;
-    color: red;
+    color: var(--color-red);
 }
 .portfolio-card-title{
     font-weight: 420;
@@ -250,7 +255,7 @@ h5{
     border-bottom: var(--border-bottom);
 }
 .years{
-    color: red;
+    color: var(--color-red);
     font-size: 11px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -275,7 +280,7 @@ h5{
     border-radius: 8px;
     border-right: 2px solid white;
     box-shadow: var(--bx-shadow);
-    color: red;
+    color: var(--color-red);
 }
 /*
 #smenu-resume-lastitem{
@@ -289,7 +294,7 @@ h5{
     gap: 10px;
 }
 .date{
-    color: red;
+    color: var(--color-red);
     font-size: 11px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -380,7 +385,7 @@ h5{
     height: 28px;
     width: 60px;
     text-align: center;
-    color: red;
+    color: var(--color-red);
     font-size: 13px;
     border: var(--border-style);
     border-radius: 6px;
@@ -399,3 +404,181 @@ h5{
 }
 
 /* //////// SECTION MY BLOG ////////////// */
+#my-blog{
+    padding: 60px 0 60px 0;
+    text-align: center;
+    height: 80vh;
+    border-bottom: var(--border-bottom);
+}
+.blog-title{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.blog-cards{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myblog-subtitle{
+    color: var(--color-red);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.blog-card{
+    width: 28%;
+    height: 70%;
+    padding: 0 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: var(--bx-shadow);
+}
+.blog-img{
+    max-width: 100%;
+    height:auto;
+    border-radius: 8px;
+    position:relative;
+    bottom: 10px;
+}
+.blog-subtitles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.first-subtitle{
+    color: var(--color-red);
+    font-size: 12px;
+    font-weight: 400;
+}
+.second-subtitle{
+    font-size: 12px;
+}
+.blog-card-title{
+    text-align: left;
+    font-size: 18px;
+}
+
+/* ///////// CONTACT SECTION//////////// */
+
+#contact{
+    height: 100vh;
+    padding: 60px 0 60px 0;
+    text-align: center;
+}
+
+.contact-subtitle{
+    color: var(--color-red);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-title{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.container-contact{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.contact-card{
+    width: 45%;
+    height: 90%;
+    box-shadow: var(--bx-shadow);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-card-body{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-img{
+    width: 100%;
+    height: 42%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.contact-card-title{
+    font-size: 22px;
+}
+
+.contact-card-text{
+    line-height: 23px;
+}
+
+.my-form{
+    width: 55%;
+    height: 90%;
+    padding: 20px;
+    box-shadow: var(--bx-shadow);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+}
+
+label{
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.first-row-form{
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.container-first-row{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form{
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+textarea{
+    height: 180px;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.form-button{
+    background-color: var(--color-red);
+    height: 40px;
+    color: #ECF0F3;
+    border-radius: 6px;
+    border:none;
+}
+
+/* ////////FOOTER////////////// */
+
+footer{
+    height: 20vh;
+    text-align: center;
+}
