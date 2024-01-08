@@ -1,0 +1,33 @@
+
+/* /////////// TABLETA ///////////////*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .all-content{
+        padding: 0 50px 0 50px;
+    }
+    /* PORTFOLIO SECTION */
+
+    .portfolio-card{
+        width: 40%;
+    }
+    /* RESUME SECTION */
+
+    article.resume-card {
+        width: auto;
+    }
+
+    /* MY-BLOG SECTION  */
+
+    #my-blog{
+        height: 200vh;
+    }
+    .blog-cards{
+        justify-content: center;
+    }
+
+    .blog-card{
+        width: 60%;
+        height: 25%;
+    }
+
+}
