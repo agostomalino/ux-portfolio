@@ -10,7 +10,7 @@
     .portfolio-card{
         width: 40%;
     }
-    /* RESUME SECTION */
+
 
     article.resume-card {
         width: auto;
@@ -37,6 +37,7 @@
     body{
         height: auto;
         max-width: 767px;
+        width: 100vw;
         overflow: auto;
         margin: 0;
         width: 100vw;
@@ -85,14 +86,44 @@
 
     /* resume */
     #resume{
-        height: 220vh;
-    }
-    .container-resume-articles{
+        height: 270vh;
+        width: 100vw;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .submenu-resume-section{
+        flex-direction: column;
+        width: 80vw;
+    }
+    .submenu-resume-item:hover{
+    width: 100%;
     }
 
+    .container-resume-articles{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column{
+        width: 100%;
+    }
     .resume-card{
-        width: 350px;
+        width: 300px;
+        height: auto;
+    }
+    .stick{
+        height: 260px;
+    }
+    .container-lstick{
+        height: 255px;
+    }
+    .little-stick{
+        position: relative;
+        top:49px;
+    }
+    .first-stick{
+        height: 50px;
     }
 
     /* blog */

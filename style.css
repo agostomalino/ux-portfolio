@@ -298,11 +298,12 @@ h5{
     align-items: center;
     justify-content: center;
 }
-#smenu-resume-firstitem{
+.submenu-resume-item:hover{
     border-radius: 8px;
     border-right: 2px solid white;
     box-shadow: var(--bx-shadow);
     color: var(--color-red);
+
 }
 
 .container-resume-articles{
