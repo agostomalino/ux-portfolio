@@ -625,3 +625,11 @@ footer{
 .footer-subtitle{
     font-size: 12px;
 }
+
+.hidden{
+    display: none;
+}
+.verMas{
+    color: var(--color-red);
+    font-weight: 400;
+}

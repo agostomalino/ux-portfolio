@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="main-image-container">
-          <img src="./images/foto-gris.jpeg" alt="the developer" class="main-image"/>
+          <img src="./images/foto-gris.jpeg" alt="the developer" class="main-image" id="main-image"/>
         </div>
       </main>
       <section id="features">
@@ -124,6 +124,10 @@
                 </div>
                   <h3 class="portfolio-card-title">The services provides for design</h3>
               </div>
+                <div class="hidden">
+                  <i class="bi bi-github">View Repository</i>
+                </div>
+                <a href="#" class="verMas">Saber más</a>
             </div>
             <div class="portfolio-card">
               <div class="container-img-portfolio">
@@ -136,6 +140,10 @@
                 </div>
                   <h3 class="portfolio-card-title">Mobile app landing design & app maintain</h3>
               </div>
+              <div class="hidden">
+                <i class="bi bi-github">View Repository</i>
+              </div>
+              <a href="#" class="verMas">Saber más</a>
             </div>
             <div class="portfolio-card">
               <div class="container-img-portfolio">
@@ -148,6 +156,10 @@
                 </div>
                   <h3 class="portfolio-card-title">Logo design creativity & Application</h3>
               </div>
+              <div class="hidden">
+                <i class="bi bi-github">View Repository</i>
+              </div>
+              <a href="#" class="verMas">Saber más</a>
             </div>
             <div class="portfolio-card">
               <div class="container-img-portfolio">
@@ -160,6 +172,10 @@
                 </div>
                   <h3 class="portfolio-card-title">Mobile app landing design & services</h3>
               </div>
+              <div class="hidden">
+                <i class="bi bi-github">View Repository</i>
+              </div>
+              <a href="#" class="verMas">Saber más</a>
             </div>
             <div class="portfolio-card">
               <div class="container-img-portfolio">
@@ -172,6 +188,10 @@
                 </div>
                   <h3 class="portfolio-card-title">Design for technology & services</h3>
               </div>
+              <div class="hidden">
+                <i class="bi bi-github">View Repository</i>
+              </div>
+              <a href="#" class="verMas">Saber más</a>
             </div>
             <div class="portfolio-card">
               <div class="container-img-portfolio">
@@ -184,6 +204,10 @@
                 </div>
                   <h3 class="portfolio-card-title">App for technology & services</h3>
               </div>
+              <div class="hidden">
+                <i class="bi bi-github">View Repository</i>
+              </div>
+              <a href="#" class="verMas">Ver más</a>
             </div>
         </div>
 
@@ -419,15 +443,15 @@
             
           <div class="form-group">
             <label for="subject">SUBJECT</label>
-            <input type="text" id="name" name="subject" class="input-form">
+            <input type="text" id="subject" name="subject" class="input-form">
           </div>
 
           <div class="form-group">
             <label for="message">YOUR MESSAGE</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
-
           <button type="submit" class="form-button">SEND MESSAGE</button>
+          <div id="container-enviar"></div>
         </form>
 
         </div>
@@ -438,6 +462,7 @@
       <h6 class="footer-title">INBIO</h6>
       <p class="footer-subtitle">Rainbow-Themes</p>
     </footer>
+    <script src="app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
