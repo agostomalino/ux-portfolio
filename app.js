@@ -35,7 +35,7 @@ cards.forEach(card => {
 });
 
 
-// Mensaje de "Enviado con éxito
+// Mensaje de "Enviado con éxito" 
 // 
 // En el caso de querer enviar los datos realmente deberia usar el evento submit. 
 // Pero en este caso no funciona 
@@ -55,3 +55,18 @@ formBoton.addEventListener('click', (e) => {
 
 
 // SLIDER
+let indiceActual = 0;
+const tarjetasPorSlide = 3; 
+const anchoTarjeta = 300;
+
+function moverSlider(direccion) {
+    const contenedor = document.querySelector('.container-cards');
+
+    if (direccion === 1 && indiceActual < contenedor.children.length - tarjetasPorSlide) {
+        indiceActual += tarjetasPorSlide;
+    } else if (direccion === -1 && indiceActual > 0) {
+        indiceActual -= tarjetasPorSlide;
+    }
+
+    contenedor.style.transform = `translateX(-${indiceActual * anchoTarjeta}px)`;
+}
